@@ -11,8 +11,6 @@
 
   <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sign-in/">
 
-
-
   <!-- Bootstrap core CSS -->
   <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -44,6 +42,7 @@
       <img class="mb-4" src="assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
       <h1 class="h3 mb-3 fw-normal">Silakan Login</h1>
       <?php
+
       session_start();
       if (isset($_SESSION['username'])) {
         header('Location: pages/dashboard.php');
@@ -68,7 +67,6 @@
 
         <?php
           $_SESSION['username'] = $_POST['username'];
-
           header('Location: pages/dashboard.php');
         } else {
         ?>

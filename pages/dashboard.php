@@ -1,3 +1,9 @@
+<?php
+session_start();
+if(!isset($_SESSION['username'])){
+  echo '<meta http-equiv="refresh" content="0;url=http://localhost/praktikum_karyawan">';
+}
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -9,8 +15,6 @@
     <title>Dashboard Template · Bootstrap v5.1</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/dashboard/">
-
-    
 
     <!-- Bootstrap core CSS -->
 <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
