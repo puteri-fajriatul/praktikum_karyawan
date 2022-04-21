@@ -12,7 +12,11 @@ if(isset($_POST['button_logout'])){
 <!doctype html>
 <html lang="en">
 
-<?php include "components/head.php" ?>
+<?php 
+include "components/head.php";
+include_once "../database/database.php";
+
+?>
 
 <body>   
 
