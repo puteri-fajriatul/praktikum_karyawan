@@ -6,7 +6,7 @@
       </div>
 
       <div class="table-responsive">
-      <a href="" class= "btn btn-primary mb-3"><span data-feather="plus"></span>Data Baru</a>
+      <a href="?page=karyawancreate" class= "btn btn-primary mb-3"><span data-feather="plus"></span>Data Baru</a>
         <table class="table table-striped table-sm">
           <thead>
             <tr>
