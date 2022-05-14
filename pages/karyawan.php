@@ -6,6 +6,7 @@
       </div>
 
       <div class="table-responsive">
+      <a href="" class= "btn btn-primary mb-3"><span data-feather="plus"></span>Data Baru</a>
         <table class="table table-striped table-sm">
           <thead>
             <tr>
@@ -13,7 +14,7 @@
               <th scope="col">NIK</th>
               <th scope="col">Nama Karyawan</th>
               <th scope="col">Jenis Kelamin</th>
-              <th scope="col">Status</th>
+              <th scope="col">Opsi</th>
             </tr>
           </thead>
           <tbody>
