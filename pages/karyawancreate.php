@@ -6,6 +6,7 @@
             include_once "../database/database.php";
 
             if (isset($_POST['button_simpan'])){
+            print_r($_POST);
 
             $nik = $_POST['nik'];
             $nama_karyawan = $_POST ['nama_karyawan'];
@@ -41,9 +42,16 @@
             <label for="nama_karyawan" class="form-label">Nama Karyawan</label>
             <input type="text" class="form-control" id="nama_karyawan" name="nama_karyawan">
         </div>
-        <div class="mb-3">
+        <div>
             <label for="jenis_kelamin" class="form-label">Jenis Kelamin</label>
-            <input type="text" class="form-control" id="jenis_kelamin" name="jenis_kelamin">
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" value="Laki-laki" name="jenis_kelamin" id="jenis_kelamin1" checked>
+            <label class="form-check-label" for="jenis_kelamin1">Laki - Laki</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" value="Perempuan" name="jenis_kelamin" id="jenis_kelamin2" checked>
+            <label class="form-check-label" for="jenis_kelamin2">Perempuan</label>
         </div>
         <div class="mb-3">
             <label for="status" class="form-label">Status Karyawan</label>
