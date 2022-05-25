@@ -54,8 +54,14 @@
             <label class="form-check-label" for="jenis_kelamin2">Perempuan</label>
         </div>
         <div class="mb-3">
-            <label for="status" class="form-label">Status Karyawan</label>
-            <input type="text" class="form-control" id="status" name="status">
+            <label for="status" class="form-label">Status Menikah</label>
+            <select class="form-select" aria-label="Default select example" name="status">
+                <option selected>Pilih Status</option>
+                <option value="Belum Menikah">Belum Menikah</option>
+                <option value="Menikah Anak 0">Menikah Anak 0</option>
+                <option value="Menikah Anak 1">Menikah Anak 1</option>
+                <option value="Menikah Anak 2">Menikah Anak 2</option>
+            </select>
         </div>
             <button class="btn btn-primary" type="submit" name="button_simpan"><span data-feather="database"></span> Simpan </button>
         </form>
