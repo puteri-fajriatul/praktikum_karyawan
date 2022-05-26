@@ -7,10 +7,11 @@
 
       <div class="table-responsive">
       <a href="?page=karyawancreate" class= "btn btn-primary mb-3"><span data-feather="plus"></span>Data Baru</a>
+
         <table class="table table-striped table-sm">
           <thead>
             <tr>
-              <th scope="col">ID</th>
+              <th scope="col">#</th>
               <th scope="col">NIK</th>
               <th scope="col">Nama Karyawan</th>
               <th scope="col">Jenis Kelamin</th>
@@ -36,10 +37,8 @@
           <td><?php echo $data ['nama_karyawan'] ?></td>
           <td><?php echo $data ['jenis_kelamin'] ?></td>
           <td> 
-            <button class="btn btn-warning">
-              <span data-feather="clipboard"></span></button>
-            <button class="btn btn-success">
-              <span data-feather="x-octagon"></span></button>
+          <a href="?page=karyawanupdate&id=<php echo $data ['id'] ?>" class= "badge bg-warning"><span data-feather="edit"></a>
+          <a href="?page=karyawandelete&id=<php echo $data ['id'] ?>" class= "badge bg-success"><span data-feather="x-octagon"></a>
         </tr>
         <?php
           }
