@@ -14,9 +14,9 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link <?php echo $_GET['page'] == 'bagian' ? 'active' : ''?>" href="?page=bagian">
+            <a class="nav-link <?php echo $_GET['page'] == 'barang' ? 'active' : ''?>" href="?page=barang">
               <span data-feather="layers"></span>
-              Data Bagian
+              Data Barang
             </a>
           </li>
           <li class="nav-item">
