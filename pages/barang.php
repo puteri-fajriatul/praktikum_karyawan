@@ -42,10 +42,9 @@
         <td><?php echo $data ['barang_keluar'] ?></td>
         <td><?php echo $data ['stok_akhir'] ?></td>
         <td> 
-            <button class="btn btn-warning">
-                <span data-feather="clipboard"></span></button>
-            <button class="btn btn-success">
-                <span data-feather="x-octagon"></span></button>
+            <a href="?page=barangupdate&id_barang= <?php echo $data ['id_barang'] ?>" class= "badge bg-warning"><span data-feather="edit"></a>
+            <a href="?page=barangdelete&id_barang= <?php echo $data ['id_barang'] ?>" class= "badge bg-success"><span data-feather="x-octagon"></a>
+            </td>
         </tr>
         <?php
         }
