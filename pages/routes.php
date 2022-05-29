@@ -6,22 +6,28 @@ if(isset($_GET['page'])){
 			include "dashboard.php";
 			break;
 		case 'karyawan':
-			include "karyawan.php";
+			include "karyawan/karyawan.php";
 			break;
 		case 'karyawancreate':
-			include "karyawancreate.php"; 
+			include "karyawan/karyawancreate.php"; 
 			break;
-		case 'karyawancupdate':
-			include "karyawanupdate.php"; 
+		case 'karyawanupdate':
+			include "karyawan/karyawanupdate.php"; 
 			break;
-		case 'karyawancupdate':
-			include "karyawandelete.php"; 
+		case 'karyawandelete':
+			include "karyawan/karyawandelete.php"; 
 			break;
 		case 'barang':
-			include "barang.php";
+			include "barang/barang.php";
 			break;
 		case 'barangcreate':
-			include "barangcreate.php";
+			include "barang/barangcreate.php";
+			break;
+		case 'barangupdate':
+			include "barang/barangupdate.php";
+			break;
+		case 'barangdelete':
+			include "barang/barangdelete.php";
 			break;
 		default;
 			include "dashboard.php";
